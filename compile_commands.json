@@ -1,0 +1,17 @@
+[
+  {
+    "directory": "/Users/warwick320/Project/s64",
+    "command": "clang++ -c kernel/core/lib/framework.cpp -o build/framework.o -Ikernel",
+    "file": "kernel/core/lib/framework.cpp"
+  },
+  {
+    "directory": "/Users/warwick320/Project/s64",
+    "command": "clang++ -c kernel/core/lib/kernel_output/kernel_output.cpp -o build/kernel_output.o -Ikernel",
+    "file": "kernel/core/lib/kernel_output/kernel_output.cpp"
+  },
+  {
+    "directory": "/Users/warwick320/Project/s64",
+    "command": "clang++ -c kernel/kernel.cpp -o build/kernel.o -Ikernel",
+    "file": "kernel/kernel.cpp"
+  }
+]
