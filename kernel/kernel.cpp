@@ -1,5 +1,5 @@
 #include "core/include/kernel_output/kernel_output.hpp"
-
+#include "core/include/sion_pmm/sion_pmm.hpp"
 using namespace sion64;
 
 #define _asm_r(cmd, op, val) do { \
@@ -60,11 +60,13 @@ extern "C" void interrupt_handler(void) {
 
 extern "C" void kernel_main(void) {
     printSL("Sion64(s64) kernel ver %s + build %s", S64_VER, S64_VER_BUILD);
-
+    printSL("init sion_pmm");
+    mem::pmm::pmm_init();
+    printSI("sucessfuly init sion_pmm");
+    printSL("init interrupt");
     add_interrupt_handler((void*)interrupt_trap);
     set_timer(10000000);
     enable_interrupt_reg();
-    
-
+    printSL("sucessfuly init interrupt");
     for (;;) {}
 }

@@ -18,5 +18,7 @@ SECTIONS {
     stack_bottom = .;
     . = . + 0x10000; /* stack size 64kb*/
     stack_top = .;
+    kernel_end = .;
+    
 
 }

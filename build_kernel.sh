@@ -13,7 +13,7 @@ next=$((current + 1))
 
 sed -i '' -E "s/build [0-9]+/build $next/" README.md
 
-sed -i '' -E "s/#define S64_VER \"[0-9]+\"/#define S64_VER \"$next\"/" kernel/core/include/framework.h
+sed -i '' -E "s/#define S64_VER_BUILD \"[0-9]+\"/#define S64_VER_BUILD \"$next\"/" kernel/core/include/framework.h
 
 echo "  -> Build Number: $next"
 

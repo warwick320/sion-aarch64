@@ -1,8 +1,8 @@
 [
   {
     "directory": "/Users/warwick320/Project/s64",
-    "command": "clang++ -c kernel/core/lib/framework.cpp -o build/framework.o -Ikernel",
-    "file": "kernel/core/lib/framework.cpp"
+    "command": "clang++ -c kernel/core/lib/sion_pmm/sion_pmm.cpp -o build/sion_pmm.o -Ikernel",
+    "file": "kernel/core/lib/sion_pmm/sion_pmm.cpp"
   },
   {
     "directory": "/Users/warwick320/Project/s64",
